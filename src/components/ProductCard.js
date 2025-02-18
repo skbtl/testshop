@@ -9,7 +9,7 @@ export const ProductCard = ({ product }) => {
   const { addToCart, cartList, removeFromCart } = useCart();
 
   useEffect(() => {
-    const productIsInCart = cartList.find((item) => item.id === id);
+    const productIsInCart = cartList.find((element) => element.id === id);
     if (productIsInCart) {
       setIsInCart(true);
     } else {
